@@ -7,57 +7,98 @@
   </head>
   <body>
     <h1>Login to Tadenex Forex Capital</h1>
-    <form action="login.php" method="POST">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Login">
-    </form>
-  </body>
-</html>
-<?php
-// Start the session
-session_start();
-
-// Check if the form was submitted
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  // Get the username and password from the form data
-  $username = $_POST['username'];
-  $password = $_POST['password'];
-
-  // Validate the username and password
-  if ($username == 'your_username_here' && $password == 'your_password_here') {
-    // Successful login
-    $_SESSION['username'] = $username;
-    header('Location: dashboard.php');
-    exit;
-  } else {
-    // Failed login
-    $error_message = 'Invalid username or password';
-  }
-}
-?>
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tadenex Forex Capital - Login</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <h1>Login to Tadenex Forex Capital</h1>
-    <?php if (isset($error_message)): ?>
-      <p><?php echo $error_message; ?></p>
-    <?php endif; ?>
-    <form action="login.php" method="POST">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Login">
-    </form>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form id="login-form">
+			<h2>Login</h2>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+		<form id="signup-form">
+			<h2>Sign up</h2>
+			<label for="new-username">Username</label>
+			<input type="text" id="new-username" name="new-username" required>
+			<label for="new-password">Password</label>
+			<input type="password" id="new-password" name="new-password" required>
+			<button type="submit">Sign up</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+form {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+
+loginForm.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const username = event.target.username.value;
+	const password = event.target.password.value;
+	// Send login request to server
+});
+
+signupForm.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const username = event.target['new-username'].value;
+	const password = event.target['new-password'].value;
+	// Send signup request to server
+});
+
 </html>
 <!DOCTYPE html>
 <html>
