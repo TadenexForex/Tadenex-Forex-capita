@@ -68,6 +68,8 @@
     </header>
     <main>
       <section>
+<img src="/Pictures/facebook/1682519052255.jpg" alt="Image Description" width="480" height="600">
+
         <h2>About Us</h2>
         <p>Welcome to Tadenex Forex Capital, your trusted partner in the foreign exchange market. We provide reliable and efficient forex trading services to help you achieve your investment goals. Our team of experts is dedicated to delivering top-notch financial solutions to our clients.</p>
       </section>
