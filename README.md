@@ -1,4 +1,39 @@
 # Tadenex-Forex-capita
+<?php
+session_start();
+$error_message = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Check if the user has entered a username and password
+    if (empty($_POST['username']) || empty($_POST['password'])) {
+        $error_message = 'Please enter both username and password';
+    } else {
+        // Validate the user's credentials against your database
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        // Example SQL statement to check the user's credentials:
+        // SELECT * FROM users WHERE username = '$username' AND password = '$password';
+        // If the user is found, set the session variable to indicate that they are logged in
+        // Example code: $_SESSION['user_id'] = $user_id;
+        // Otherwise, set an error message
+        $error_message = 'Invalid username or password';
+    }
+}
+?>
+<form action="login.php" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="submit" name="login" value="Login">
+</form>
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
