@@ -54,6 +54,167 @@
   <head>
     <title>Tadenex Forex Capital</title>
   </head>
+	
+
+	
+
+	
+
+	
+
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Welcome to Your Dashboard</h1>
+
+	</header>
+
+	<section class="account-balance">
+
+		<h2>Account Balance</h2>
+
+		<p>Your current balance is: $1000</p>
+
+	</section>
+
+	<section class="recent-trades">
+
+		<h2>Recent Trades</h2>
+
+		<ul>
+
+			<li>Buy: Apple - 100 shares</li>
+
+			<li>Sell: Google - 50 shares</li>
+
+			<li>Buy: Tesla - 75 shares</li>
+
+		</ul>
+
+	</section>
+
+	<section class="market-news">
+
+		<h2>Market News</h2>
+
+		<ul>
+
+			<li>Stock market hits all-time high</li>
+
+			<li>Bitcoin value continues to rise</li>
+
+			<li>Oil prices stabilizing after recent dip</li>
+
+		</ul>
+
+	</section>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Tadenex forex Capital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1>Investment Company</h1>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#about-us">About Us</a></li>
+
+          <li><a href="#services">Services</a></li>
+
+          <li><a href="#contact-us">Contact Us</a></li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="about-us">
+
+        <h2>About Us</h2>
+
+        <p>We are a leading investment company dedicated to providing high-quality investment services to our clients. Our team of experienced professionals is committed to helping you achieve your financial goals.</p>
+
+      </section>
+
+      <section id="services">
+
+        <h2>Services</h2>
+
+        <ul>
+
+          <li>Stock Trading</li>
+
+          <li>Mutual Funds</li>
+
+          <li>Retirement Planning</li>
+
+          <li>Portfolio Management</li>
+
+        </ul>
+
+      </section>
+
+      <section id="contact-us">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+          <label for="name">Name:</label>
+
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+
+          <input type="email" id="email" name="email">
+
+          <label for="message">Message:</label>
+
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">Send</button>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <p>&copy; Tadenex forex Capital 2023 Investment Company</p>
+
+    </footer>
+
+  </body>
+
+</html>
   <body>
     <header>
       <h1>Tadenex Forex Capital</h1>
