@@ -28,6 +28,46 @@
 			<input type="password" id="new-password" name="new-password" required>
 			<button type="submit">Sign up</button>
 		</form>
+		
+		
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 <!DOCTYPE html>
 <html>
   <head>
